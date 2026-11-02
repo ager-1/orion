@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="OrionEngine/OrionEngine.vcxproj" Id="a0f11a09-02ec-4f23-8e86-50886a14366a" />
+  <Project Path="Sandbox/Sandbox.vcxproj" Id="901ca18b-29ad-4a99-9f44-81d67d651e30" />
+</Solution>
