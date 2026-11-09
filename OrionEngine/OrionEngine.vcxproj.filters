@@ -1,36 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="OrionEngine">
+      <UniqueIdentifier>{A2DCCAD3-0E92-43C9-9786-3DA0033B3ACD}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="OrionEngine\Events">
+      <UniqueIdentifier>{46BE994C-32A2-5AA2-9B02-55F587054524}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\OrionEngine\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\OrionEngine.h" />
     <ClInclude Include="src\OrionEngine\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>OrionEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\OrionEngine.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\OrionEngine\Core.h">
+      <Filter>OrionEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\OrionEngine\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>OrionEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\OrionEngine\Events\ApplicationEvent.h">
+      <Filter>OrionEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrionEngine\Events\Event.h">
+      <Filter>OrionEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrionEngine\Events\KeyEvent.h">
+      <Filter>OrionEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrionEngine\Events\MouseEvent.h">
+      <Filter>OrionEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrionEngine\Log.h">
+      <Filter>OrionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\OrionEngine\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>OrionEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\OrionEngine\Log.cpp">
+      <Filter>OrionEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oepch.cpp" />
   </ItemGroup>
 </Project>
