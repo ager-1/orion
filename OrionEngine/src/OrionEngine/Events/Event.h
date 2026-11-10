@@ -1,4 +1,5 @@
 #pragma once
+#include <oepch.h>
 #include "OrionEngine/Core.h"
 namespace OrionEngine {
 	enum class EventType {

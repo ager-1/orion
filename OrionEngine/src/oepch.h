@@ -13,4 +13,6 @@
 
 #ifdef OE_PLATFORM_WINDOWS
 	#include <Windows.h>
+	#include <OrionEngine/Core.h>
+	#include <OrionEngine/Log.h>
 #endif

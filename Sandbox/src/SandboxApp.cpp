@@ -1,3 +1,6 @@
+#include <cstdint>
+#include <crtdbg.h>
+#include <cstddef>
 #include <OrionEngine.h>
 class Sandbox : public OrionEngine::Application {
 public:

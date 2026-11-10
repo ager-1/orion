@@ -5,6 +5,14 @@
     <BuildType Name="Release" />
     <Platform Name="x64" />
   </Configurations>
+  <Project Path="OrionEngine\vendor\GLFW\GLFW.vcxproj" Id="154B857C-0182-860D-AA6E-6C109684020F">
+    <BuildType Solution="Debug|x64" Project="Debug" />
+    <BuildType Solution="Dist|x64" Project="Dist" />
+    <BuildType Solution="Release|x64" Project="Release" />
+    <Platform Solution="Debug|x64" Project="x64" />
+    <Platform Solution="Dist|x64" Project="x64" />
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
   <Project Path="OrionEngine\OrionEngine.vcxproj" Id="A2DCCAD3-0E92-43C9-9786-3DA0033B3ACD">
     <BuildType Solution="Debug|x64" Project="Debug" />
     <BuildType Solution="Dist|x64" Project="Dist" />

@@ -1,5 +1,6 @@
 #pragma once
 #include "Core.h"
+#include "Events/Event.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 namespace OrionEngine {
@@ -21,11 +22,12 @@ namespace OrionEngine {
 #define OE_CORE_INFO(...)	::OrionEngine::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define OE_CORE_WARN(...)	::OrionEngine::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define OE_CORE_ERROR(...)	::OrionEngine::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define OE_CORE_FATAL(...)	::OrionEngine::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define OE_CORE_FATAL(...)	::OrionEngine::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 //Client Log Macros
 #define OE_TRACE(...)		::OrionEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define OE_INFO(...)		::OrionEngine::Log::GetClientLogger()->info(__VA_ARGS__)
 #define OE_WARN(...)		::OrionEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define OE_ERROR(...)		::OrionEngine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define OE_FATAL(...)		::OrionEngine::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define OE_FATAL(...)		::OrionEngine::Log::GetClientLogger()->critical(__VA_ARGS__)
+

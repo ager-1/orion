@@ -25,7 +25,7 @@ namespace OrionEngine {
 		inline float GetYOffset() const { return m_YOffset; }
 		std::string ToString() const override {
 			std::stringstream ss;
-			ss << "MouseScrolledEvent: " << GetXOffset << ", "<< GetYOffset;
+			ss << "MouseScrolledEvent: " << GetXOffset() << ", "<< GetYOffset();
 			return ss.str();
 		}
 		EVENT_CLASS_TYPE(MouseScrolled)

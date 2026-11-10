@@ -7,6 +7,10 @@ workspace "OrionEngine"
     }
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+-- Include directoriess relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "OrionEngine/vendor/GLFW/include"
+include "OrionEngine/vendor/GLFW" 
 
 project "OrionEngine"
     location "OrionEngine"
@@ -26,9 +30,13 @@ project "OrionEngine"
     includedirs
     {
         "%{prj.name}/vendor/spdlog/include",
-        "OrionEngine/src"
+        "%{prj.name}/src",
+        "%{IncludeDir.GLFW}"
     }
-
+    links{
+        "GLFW",
+        "opengl32.lib"
+    }
     filter "system:windows"
         cppdialect "C++17"
         staticruntime "On"
