@@ -10,7 +10,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directoriess relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "OrionEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "OrionEngine/vendor/Glad/include"
+IncludeDir["ImGui"] = "OrionEngine/vendor/imgui"
 include "OrionEngine/vendor/GLFW" 
+include "OrionEngine/vendor/Glad" 
+include "OrionEngine/vendor/imgui" 
 
 project "OrionEngine"
     location "OrionEngine"
@@ -31,10 +35,14 @@ project "OrionEngine"
     {
         "%{prj.name}/vendor/spdlog/include",
         "%{prj.name}/src",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
     links{
         "GLFW",
+        "Glad",
+        "ImGui",
         "opengl32.lib"
     }
     filter "system:windows"
@@ -45,7 +53,8 @@ project "OrionEngine"
         defines
         {
             "OE_PLATFORM_WINDOWS",
-            "OE_BUILD_DLL"
+            "OE_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
         postbuildcommands
         {
@@ -54,14 +63,17 @@ project "OrionEngine"
 
     filter "configurations:Debug"
         defines "OE_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "OE_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "OE_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -100,12 +112,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "OE_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "OE_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "OE_DIST"
+        buildoptions "/MD"
         optimize "On"

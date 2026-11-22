@@ -5,7 +5,23 @@
     <BuildType Name="Release" />
     <Platform Name="x64" />
   </Configurations>
+  <Project Path="OrionEngine\vendor\Glad\Glad.vcxproj" Id="BDD6857C-A90D-870D-52FA-6C103E10030F">
+    <BuildType Solution="Debug|x64" Project="Debug" />
+    <BuildType Solution="Dist|x64" Project="Dist" />
+    <BuildType Solution="Release|x64" Project="Release" />
+    <Platform Solution="Debug|x64" Project="x64" />
+    <Platform Solution="Dist|x64" Project="x64" />
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
   <Project Path="OrionEngine\vendor\GLFW\GLFW.vcxproj" Id="154B857C-0182-860D-AA6E-6C109684020F">
+    <BuildType Solution="Debug|x64" Project="Debug" />
+    <BuildType Solution="Dist|x64" Project="Dist" />
+    <BuildType Solution="Release|x64" Project="Release" />
+    <Platform Solution="Debug|x64" Project="x64" />
+    <Platform Solution="Dist|x64" Project="x64" />
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="OrionEngine\vendor\imgui\ImGui.vcxproj" Id="C0FF640D-2C14-8DBE-F595-301E616989EF">
     <BuildType Solution="Debug|x64" Project="Debug" />
     <BuildType Solution="Dist|x64" Project="Dist" />
     <BuildType Solution="Release|x64" Project="Release" />

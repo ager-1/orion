@@ -7,14 +7,22 @@
     <Filter Include="OrionEngine\Events">
       <UniqueIdentifier>{46BE994C-32A2-5AA2-9B02-55F587054524}</UniqueIdentifier>
     </Filter>
+    <Filter Include="OrionEngine\ImGui">
+      <UniqueIdentifier>{4CC3E238-B8D9-E0CE-0151-6CF06DA6B156}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Layer.h" />
+    <ClInclude Include="src\LayerStack.h" />
     <ClInclude Include="src\OrionEngine.h" />
     <ClInclude Include="src\OrionEngine\Application.h">
       <Filter>OrionEngine</Filter>
@@ -37,11 +45,17 @@
     <ClInclude Include="src\OrionEngine\Events\MouseEvent.h">
       <Filter>OrionEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\OrionEngine\ImGui\ImGuiLayer.h">
+      <Filter>OrionEngine\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\OrionEngine\Log.h">
       <Filter>OrionEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\OrionEngine\Window.h">
       <Filter>OrionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
@@ -49,11 +63,19 @@
     <ClInclude Include="src\oepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Layer.cpp" />
+    <ClCompile Include="src\LayerStack.cpp" />
     <ClCompile Include="src\OrionEngine\Application.cpp">
       <Filter>OrionEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\OrionEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>OrionEngine\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\OrionEngine\Log.cpp">
       <Filter>OrionEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>

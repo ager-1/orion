@@ -4,3 +4,6 @@
 [submodule "OrionEngine/vendor/GLFW"]
 	path = OrionEngine/vendor/GLFW
 	url = https://github.com/ager-1/glfw
+[submodule "OrionEngine/vendor/imgui"]
+	path = OrionEngine/vendor/imgui
+	url = https://github.com/ager-1/imgui
